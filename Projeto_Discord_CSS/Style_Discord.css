@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Open_Sans';
+    src: url(Fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'Luckiest_Guy';
+    src: url(Fontes/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+} 
+header {
+    background-image:url("Header\ Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header h1{
+    font-weight: normal;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+#Button1{
+    border-radius: 5em;
+    width: 180px;
+    height: 40px;
+    color: #23272A;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+#Button2{
+    border-radius: 5em;
+    width: 240px;
+    height: 40px;
+    color: cornsilk;
+    background-color: #23272A;
+    border: 1px solid #23272A;
+}
+main{
+    color: #23272A;
+}
+#ConteudoCentral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: cornsilk;
+    font-family: 'Luckiest_Guy';
+    font-weight: normal;
+}
+h2{
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Open_Sans';
+    font-weight: 700;
+}
+p{
+    font-size: 18px;
+    font-family: 'Open_Sans';
+    font-weight: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+article section{
+    width: 35%;
+}
+article{
+    padding: 1em;
+}
+.Section img{
+    width: 450px;
+}
+#SectionCentral h2{
+    font-family: 'Luckiest_Guy';
+}
+#SectionCentral p{
+    font-family: 'Open_Sans';
+}
+#SectionCentral img{
+    width: 550px;
+}
+section{
+    background-color: transparent;
+}
+#SectionCentral, #SectionCentral section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+}
+.Fundo{
+    background-color: #F6F6F6;
+}
+.Section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Texto{
+    order: 2;
+}
+.Imagem{
+    order: 1;
+}
+footer{
+    background-color: #23272A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 428px){
+    header {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+    #ConteudoCentral {
+        width: 90%;
+        text-align: left;
+        font-size: 14px;
+    }
+    h1{
+        width: 100%;
+        justify-content: left;
+        margin-left: 0;
+        text-align: left;
+    }
+    #ConteudoCentral p{
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    #ConteudoCentral div {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #Button1, #Button2 {
+        width: 80%;
+        max-width: 300px;
+        height: 40px;
+    }
+    .Section {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+    article section {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Section img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 15px; 
+    }
+    #SectionCentral img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    footer img{
+        width: 250px;
+    }
+}
